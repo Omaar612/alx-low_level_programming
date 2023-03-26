@@ -6,13 +6,12 @@
  */
 int main(void)
 {
-int n, sum1, sum2;
+int n, sum;
 for (n = 1; n < 1024 ; n++)
 {
-sum1 = n * 3 + (n - 1) * 3;
-sum2 = n * 5 + (n - 1) * 3;
+if ((n % 3) == 0 || (n % 5) == 0)
+sum += n;
 }
-printf("%d\n", sum1);
-printf("%d", sum2);
+printf("%d", sum);
 return (0);
 }
