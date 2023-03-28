@@ -9,12 +9,12 @@
 void _print_rev(char *s)
 {
 int i;
-while (str[i])
+while (s[i])
 {
 i++;
 }
 while (i--)
 {
-printf("%c", str[i]);
+printf("%c", s[i]);
 }
 }
