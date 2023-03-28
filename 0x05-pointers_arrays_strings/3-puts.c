@@ -8,8 +8,7 @@
  */
 void _puts(char *str)
 {
-int i;
-for (i = 0; *str != '\0';)
+for (; *str != '\0';)
 {
 printf("%c\n", *str++);
 }
