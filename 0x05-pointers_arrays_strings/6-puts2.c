@@ -8,10 +8,11 @@
  */
 void puts2(char *str)
 {
-for (; *str != '\0'; *str++)
+int i;
+for (i = 0; str[i] != '\0'; i++)
 {
 if (*str % 2 == 0)
-printf("%c", *str);
+printf("%c", str[i]);
 }
 printf("\n");
 }
