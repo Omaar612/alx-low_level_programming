@@ -11,7 +11,7 @@ void puts2(char *str)
 for(; *str != '\0';)
 {
 if(*str % 2 == 0)
-printf("%c", *str++);
+printf("%c", *str);
 }
 printf("\n");
 }
