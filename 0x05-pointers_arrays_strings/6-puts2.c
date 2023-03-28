@@ -8,9 +8,9 @@
  */
 void puts2(char *str)
 {
-for(; *str != '\0';)
+for (; *str != '\0'; *str++)
 {
-if(*str % 2 == 0)
+if (*str % 2 == 0)
 printf("%c", *str);
 }
 printf("\n");
