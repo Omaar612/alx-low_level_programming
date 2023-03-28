@@ -17,4 +17,5 @@ while (i--)
 {
 printf("%c", s[i]);
 }
+printf("\n");
 }
