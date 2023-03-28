@@ -4,17 +4,15 @@
  *
  *@str:the string
  *
- *@i:the counter of the elements inside the str.
- *
  * Return: Always void.
  */
 void puts2(char *str)
 {
-int i;
-for(i = 0; *str != '\0'; *str++)
+for(; *str != '\0';)
 {
 if(*str % 2 == 0)
 printf("%c", *str);
+*str++;
 }
 printf("\n");
 }
