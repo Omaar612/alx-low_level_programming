@@ -14,7 +14,6 @@ for (j = 0; needle[i] >= '\0'; j++)
 if (needle[j] == haystack[j])
 {
 return (needle);
-break;
 }
 }
 return (0);
