@@ -7,13 +7,13 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-int j = 0;
+int j;
 unsigned int i = 0;
-for (; *s >= '\0'; s++)
+while (*s)
 {
-for (; s[j] >= '\0'; j++)
+for (j = 0; accept[j]; j++)
 {
-if (accept[j] == *s)
+if (*s == accept[j])
 {
 i++;
 break;
@@ -21,6 +21,7 @@ break;
 else if (accept[j + 1] == '\0')
 return (i);
 }
+s++;
 }
 return (0);
 }
