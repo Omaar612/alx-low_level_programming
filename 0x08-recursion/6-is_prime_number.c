@@ -22,7 +22,7 @@ int is_prime_number(int n)
  *
  * Return: 1 if n is prime, 0 if not
  */
-int primeint n, int i)
+int prime(int n, int i)
 {
 	if (i == 1)
 		return (1);
