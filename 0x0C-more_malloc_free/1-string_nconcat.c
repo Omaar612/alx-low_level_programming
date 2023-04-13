@@ -23,8 +23,6 @@ for (len2 = 0; s2[len2] != '\0'; len2++)
 ;
 if (n < len1)
 s = malloc(1 + n + len1);
-else
-s = malloc(len1 + len2 + 1);
 if (s == NULL)
 return (NULL);
 for (i = 0; s1[i] != '\0'; i++)
