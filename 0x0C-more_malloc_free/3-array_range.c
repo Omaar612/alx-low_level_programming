@@ -14,9 +14,9 @@ if (min > max)
 return (NULL);
 len = max - min + 1;
 s = malloc(sizeof(int) * len)
-if (!s)
+if (s == NULL)
 return (NULL);
-for (i = 0; i < len; i++)
+for (i = 0; min <= max; i++)
 s[i] = min++;
 return (s);
 }
