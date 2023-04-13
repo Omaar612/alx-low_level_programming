@@ -28,6 +28,6 @@ void *s;
 if (size == 0 || size == NULL)
 return (NULL);
 s = realloc(nmemb * sizeof(int));
-if (m == 0)
+if (s == 0)
 return (NULL);
 }
