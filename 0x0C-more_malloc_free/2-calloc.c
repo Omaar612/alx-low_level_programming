@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
-*_memset - fills memory with a constant byte
+**_memset - fills memory with a constant byte
 *@s: memory area to be filled
 *@b: char to copy
 *@n: number of times to copy b
@@ -17,19 +17,19 @@ s[i] = b;
 return (s);
 }
 /**
-*_calloc - allocates memory for an array
+**_calloc - allocates memory for an array
 *@nmemb: number of elements in the array
 *@size: size of each element
 *Return: pointer to allocated memory
 */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-void *s;
+void *m;
 if (size == 0 || size == NULL)
 return (NULL);
-s = malloc(nmemb * sizeof(int));
-if (s == 0)
+m = malloc(nmemb * size);
+if (m == 0)
 return (NULL);
-_memset(s, 0, sizeof(int) * nmemb);
-return (s);
+_memset(m, 0, sizeof(int) * nmemb);
+return (m);
 }
