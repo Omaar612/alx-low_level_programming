@@ -30,6 +30,6 @@ return (NULL);
 s = malloc(nmemb * sizeof(int));
 if (s == 0)
 return (NULL);
-_memset(m, 0, sizeof(int) * nmemb);
-return (m);
+_memset(s, 0, sizeof(int) * nmemb);
+return (s);
 }
