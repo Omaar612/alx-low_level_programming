@@ -29,5 +29,5 @@ if (size == 0 || size == NULL)
 return (NULL);
 s = realloc(nmemb * sizeof(int));
 if (m == 0)
-retrun (NULL);
+return (NULL);
 }
