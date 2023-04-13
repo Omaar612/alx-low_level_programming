@@ -13,7 +13,7 @@ int *s;
 if (min > max)
 return (NULL);
 len = max - min + 1;
-s = malloc(sizeof(int) * len)
+s = malloc(sizeof(int) * len);
 if (s == NULL)
 return (NULL);
 for (i = 0; min <= max; i++)
