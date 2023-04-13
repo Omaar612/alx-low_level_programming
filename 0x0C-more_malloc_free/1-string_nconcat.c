@@ -30,7 +30,7 @@ return (NULL);
 for (i = 0; i < len1; i++)
 {
 s[i] = s1[i];
-} 
+}
 s[i] = " ";
 i++;
 for (j = 0; i < len2; j++)
