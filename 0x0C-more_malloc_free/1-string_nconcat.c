@@ -27,7 +27,7 @@ else
 s = malloc(1 + len1 + len2);
 if (s == NULL)
 return (NULL);
-for (i = 0; i <= len1; i++)
+for (i = 0; i < len1; i++)
 {
 s[i] = s1[i];
 }
