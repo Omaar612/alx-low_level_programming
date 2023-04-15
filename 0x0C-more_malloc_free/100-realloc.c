@@ -22,13 +22,17 @@ free(ptr);
 return (NULL);
 }
 if (!ptr)
+{
 return (malloc(new_size));
+}
 s = malloc(new_size);
 if (!s)
+{
 return (NULL);
+}
 s1 = ptr;
 if (new_size < old_size)
-}
+{
 for (i = 0; i < new_size; i++)
 s[i] = s1[i];
 }
