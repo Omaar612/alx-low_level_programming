@@ -7,6 +7,6 @@
 int main(void)
 {
 printf("\"At the end of the day, my goal was to be the best hacker\"");
-printf("\n\t- Kevin Mitnick");
+printf("\n\t- Kevin Mitnick\n");
 return (0);
 }
