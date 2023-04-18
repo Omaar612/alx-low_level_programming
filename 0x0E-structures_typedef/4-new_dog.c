@@ -66,18 +66,18 @@ x = _strlen(name);
 y = _strlen(owner);
 dog = malloc(sizeof(dog_t));
 if (dog == NULL)
-	return;
+	return (NULL);
 (*dog).name = malloc(x + 1);
 (*dog).owner = malloc(y + 1);
 if ((*dog).name == NULL)
 {
 free(dog);
-return;
+return (NULL);
 }
 if ((*dog).owner == NULL)
 {
 free(dog);
-return;
+return (NULL);
 }
 _strcpy((*dog).name, name);
 _strcpy((*dog).owner, owner);
