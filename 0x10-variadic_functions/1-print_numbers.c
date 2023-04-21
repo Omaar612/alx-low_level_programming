@@ -14,13 +14,14 @@ int sum = 0, i = n;
 if (!n)
 {
 	printf("\n");
-	return;
 }
 va_start(ptr, n);
 while (i--)
 {
-printf("%d%s", va_arg(ptr, int));
-if (!separator)
-	printf("");
+printf("%d", va_arg(ptr, int));
+if (!separator && i != n - 1)
+	printf("%s", separator);
 }
+printf("\n");
+va_end(ptr);
 }
