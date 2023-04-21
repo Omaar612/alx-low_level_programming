@@ -19,7 +19,7 @@ va_start(ptr, n);
 while (i--)
 {
 printf("%d", va_arg(ptr, int));
-if (!separator && i != n - 1)
+if (!separator && sum != n - 1)
 	printf("%s", separator);
 }
 printf("\n");
