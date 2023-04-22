@@ -28,7 +28,7 @@ case 'f':
 	printf("%s%f", p, va_arg(ap, double));
 break;
 case 's':
-str = va_arg(ap, char *)
+str = va_arg(ap, char*)
 if (!*str)
 str = "(nil)";
 printf("%s%s", p, str);
