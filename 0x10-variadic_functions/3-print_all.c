@@ -8,8 +8,7 @@
 void print_all(const char * const format, ...)
 {
 int i = 0;
-char *str;
-char *p = "";
+char *str = "", *p = "";
 va_list ap;
 va_start(ap, format);
 if (format)
@@ -29,7 +28,7 @@ case 'f':
 break;
 case 's':
 str = va_arg(ap, char *);
-if (!*str)
+if (str == NULL)
 str = "(nil)";
 printf("%s%s", p, str);
 break;
