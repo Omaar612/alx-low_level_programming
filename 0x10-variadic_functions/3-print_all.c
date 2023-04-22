@@ -37,7 +37,7 @@ default:
 i++;
 continue;
 }
-p = ",";
+p = ", ";
 i++;
 }
 }
