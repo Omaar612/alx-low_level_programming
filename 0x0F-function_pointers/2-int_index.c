@@ -13,7 +13,7 @@ if (array && size && cmp)
 {
 for (i = 0; i < size;)
 {
-if (cmp(array[i]));
+if (cmp(array[i]))
 return (i);
 i++;
 }
