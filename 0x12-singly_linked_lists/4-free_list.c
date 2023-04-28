@@ -9,11 +9,14 @@ void free_list(list_t *head)
 {
 list_t *n;
 
+if (!head)
+	return;
+node = head
 while (head)
 {
-n = head->next;
-free(head->str);
-free(head);
-head = n;
+n = node->next;
+free(node->str);
+free(node);
+node = n;
 }
 }
