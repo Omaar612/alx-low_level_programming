@@ -6,6 +6,5 @@ main:
 	mov edi, msg
 	mov eax, 0
 	call printf
-	ret
 section .data
-	msg db 'Hello, Holberton\n', 0xa, 0
+	msg db 'Hello, Holberton', 0xa, 0
