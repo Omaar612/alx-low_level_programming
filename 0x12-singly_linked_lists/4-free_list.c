@@ -13,7 +13,7 @@ list_t *n, *node;
 
 if (!head)
 	return;
-node = head
+node = head;
 while (head)
 {
 n = node->next;
