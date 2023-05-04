@@ -32,9 +32,10 @@ if (p == idx - 1)
 new->next = temp->next;
 temp->next = new;
 return (new);
+}
 else
 temp = temp->next;
 }
 return (NULL);
 }
-}
+
